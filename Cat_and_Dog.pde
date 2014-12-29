@@ -1,3 +1,4 @@
+//
 Cat cat;
 Dog dog;
 Bone[] bList;
