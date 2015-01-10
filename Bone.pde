@@ -2,13 +2,13 @@ class Bone {
 
   float bX;
   float bY;
-  int bSpeedX = 0;
-  int bSpeedY = 0;
+  float bSpeedX = 0;
+  float bSpeedY = 0;
   int bSize = 3;
   boolean gone = false;
 
 
-  Bone(float x, float y, int speedY, int speedX) {
+  Bone(float x, float y, float speedY, float speedX) {
     bX = x;
     bY = y;
     bSpeedY = speedY;

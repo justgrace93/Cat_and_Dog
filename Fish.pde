@@ -2,13 +2,13 @@ class Fish {
 
   float fX;
   float fY;
-  int fSpeedX = 0;
-  int fSpeedY = 0;
+  float fSpeedX = 0;
+  float fSpeedY = 0;
   int fSize = 3;
   boolean gone = false;
 
 
-  Fish(float x, float y, int speedY, int speedX) {
+  Fish(float x, float y, float speedY, float speedX) {
     fX = x;
     fY = y;
     fSpeedY = speedY;
