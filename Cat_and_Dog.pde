@@ -223,7 +223,7 @@ void drawBone(){
     }}}
       
 void shootBone(int frame) {
-  if ( key == '1' && countBoneFrame > frame) {
+  if ( key == '2' && countBoneFrame > frame) {
  bList[boneNum]= new Bone(dog.dogX, dog.dogY, 0, 3); 
       if (boneNum<bList.length-2) {
         boneNum+=1;
@@ -231,8 +231,8 @@ void shootBone(int frame) {
         boneNum = 0;
       }
     }    
-  if ( key == '2' && countBoneFrame > frame) {
-      bList[boneNum  ]= new Bone(dog.dogX, dog.dogY, 0, 1.5);
+  if ( key == '1' && countBoneFrame > frame) {
+      bList[boneNum  ]= new Bone(dog.dogX, dog.dogY, 0.0, 1.5);
       bList[boneNum+1]= new Bone(dog.dogX, dog.dogY, -0.5, 1.5);
       bList[boneNum+2]= new Bone(dog.dogX, dog.dogY, 0.5, 1.5); 
       if (boneNum<bList.length-6) {
@@ -495,7 +495,7 @@ void reset() {
   fishNum = 0;
 }
 
-
+//----remove stuff-----//
 void removeBone(Bone obj) {
   obj.gone = true;
   obj.bX = 2000;
